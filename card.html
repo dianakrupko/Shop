@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>просто.smoke</title>
-    <link href="styles/index.css" rel="stylesheet">
+    <title>product</title>
+    <link href="styles/card.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/chief-slider.min.css">
     <script defer src="js/chief-slider.min.js"></script>
     <script>
@@ -66,18 +66,29 @@
 </header>
 
 <main class="container">
-    <div class="row">
-        <div class="col-6 main-left">
-            <p>Магазин електронних сигарет</p>
-            <button>Замовити</button>
+    <div class="row product-card">
+        <div class="col-6 product-photo">
+<!--            <div>Назад</div>-->
+            <img src="image/p5.png" alt="">
         </div>
-        <div class="col-6 main-right">
-            <div class="background-box">
-                <img src="image/1.png" alt="">
-
+        <div class="col-6 product-info">
+            <h1>VAAL 1500 - MINT 50 MG</h1>
+            <p>Об’єм: <span>50мг</span></p>
+            <p>Кількість тяг: <span>1500</span></p>
+            <p>Смак: <span>М'ята</span></p>
+            <p>Ціна: <span>250₴</span></p>
+            <div class="bye-fav">
+            <button class="product-button">Купити</button>
+            <img src="image/favorite.svg" alt="">
             </div>
         </div>
+
     </div>
+    <div class="description">
+        <span>тексттексттексттексттексттексттексттекст</span>
+    </div>
+    <div class="other-products">
+        <h2>Всі продукти:</h2>
         <div class="slider">
             <div class="slider__wrapper">
                 <div class="slider__items">
@@ -167,99 +178,7 @@
                 <li data-slide-to="4"></li>
             </ol>
         </div>
-
-
-<!--    <div class="slider">-->
-<!--        <div class="slider__wrapper">-->
-<!--            <div class="slider__items">-->
-<!--                <div class="slider__item">-->
-<!--                    <img class="image" src="image/p6.png" alt="}">-->
-<!--                </div>-->
-<!--                <div class="slider__item">-->
-<!--                    <img class="image" src="image/p2.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="slider__item">-->
-<!--                    <img class="image" src="image/p3.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="slider__item">-->
-<!--                    <img class="image" src="image/p4.png" alt="">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <ol class="slider__indicators">-->
-<!--            <li data-slide-to="0"></li>-->
-<!--            <li data-slide-to="1"></li>-->
-<!--            <li data-slide-to="2"></li>-->
-<!--            <li data-slide-to="3"></li>-->
-<!--        </ol>-->
-<!--    </div>-->
-
-
-<!--    <div class="row">-->
-<!--        <div class="col-6 main-left">-->
-<!--            <p>Магазин електронних сигарет</p>-->
-<!--            <button>Замовити</button>-->
-<!--        </div>-->
-<!--        <div class="col-6 main-right">-->
-<!--            <div class="background-box">-->
-<!--                <img src="image/1.png" alt="">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="catalog">-->
-<!--        <div class="row">-->
-<!--            <div class="product col-4">-->
-<!--                <div class="box-photo">-->
-<!--                    <img src="image/p1.png" alt="">-->
-<!--                </div>-->
-<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
-<!--                <p>250₴</p>-->
-<!--                <button>Купити</button>-->
-<!--            </div>-->
-<!--            <div class="product col-4">-->
-<!--                <div class="box-photo">-->
-<!--                    <img src="image/p2.png" alt="">-->
-<!--                </div>-->
-<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
-<!--                <p>250₴</p>-->
-<!--                <button>Купити</button>-->
-<!--            </div>-->
-<!--            <div class="product col-4">-->
-<!--                <div class="box-photo">-->
-<!--                    <img src="image/p3.png" alt="">-->
-<!--                </div>-->
-<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
-<!--                <p>250₴</p>-->
-<!--                <button>Купити</button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="product col-4">-->
-<!--                <div class="box-photo">-->
-<!--                    <img src="image/p4.png" alt="">-->
-<!--                </div>-->
-<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
-<!--                <p>250₴</p>-->
-<!--                <button>Купити</button>-->
-<!--            </div>-->
-<!--            <div class="product col-4">-->
-<!--                <div class="box-photo">-->
-<!--                    <img src="image/p5.png" alt="">-->
-<!--                </div>-->
-<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
-<!--                <p>250₴</p>-->
-<!--                <button>Купити</button>-->
-<!--            </div>-->
-<!--            <div class="product col-4">-->
-<!--                <div class="box-photo">-->
-<!--                    <img src="image/p6.png" alt="">-->
-<!--                </div>-->
-<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
-<!--                <p>250₴</p>-->
-<!--                <button>Купити</button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+    </div>
 </main>
 <footer class="footer">
     <div class="container">
@@ -285,6 +204,5 @@
     </div>
     <hr>
 </footer>
-
 </body>
 </html>
