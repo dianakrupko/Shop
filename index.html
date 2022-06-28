@@ -3,7 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>просто.smoke</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chief-slider.min.css">
+    <script src="js/slider.js"></script>
+    <script defer src="js/chief-slider.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                loop: true
+            });
+        });
+    </script>
+    <style>
+        .slider__wrapper {
+            overflow: hidden;
+        }
+
+        .slider__item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            height: 1300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 7rem;
+        }
+
+        .slider__item:nth-child(1) {
+            background-color: white;
+        }
+
+        .slider__item:nth-child(2) {
+            background-color: #9c27b0;
+        }
+
+        .slider__item:nth-child(3) {
+            background-color: #3f51b5;
+        }
+
+        .slider__item:nth-child(4) {
+            background-color: #03a9f4;
+        }
+
+        .slider__item:nth-child(5) {
+            background-color: #4caf50;
+        }
+        /*------------------------------*/
+    </style>
 </head>
 <body>
 <header class="container header">
@@ -18,7 +65,9 @@
         </div>
     </div>
 </header>
+
 <main class="container">
+
     <div class="row">
         <div class="col-6 main-left">
             <p>Магазин електронних сигарет</p>
@@ -27,63 +76,192 @@
         <div class="col-6 main-right">
             <div class="background-box">
                 <img src="image/1.png" alt="">
+
             </div>
         </div>
     </div>
-    <div class="catalog">
-        <div class="row">
-            <div class="product col-4">
-                <div class="box-photo">
-                    <img src="image/p1.png" alt="">
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <!-- Контент 1 слайда -->
+
+                        <div class="catalog">
+                            <div class="row">
+                                <div class="product col-4">
+                                    <div class="box-photo">
+                                        <img src="image/p1.png" alt="">
+                                    </div>
+                                    <h2>VAAL 1500 - MINT 50 MG</h2>
+                                    <p>250₴</p>
+                                    <button>Купити</button>
+                                </div>
+                                <div class="product col-4">
+                                    <div class="box-photo">
+                                        <img src="image/p2.png" alt="">
+                                    </div>
+                                    <h2>VAAL 1500 - MINT 50 MG</h2>
+                                    <p>250₴</p>
+                                    <button>Купити</button>
+                                </div>
+                                <div class="product col-4">
+                                    <div class="box-photo">
+                                        <img src="image/p3.png" alt="">
+                                    </div>
+                                    <h2>VAAL 1500 - MINT 50 MG</h2>
+                                    <p>250₴</p>
+                                    <button>Купити</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="product col-4">
+                                    <div class="box-photo">
+                                        <img src="image/p4.png" alt="">
+                                    </div>
+                                    <h2>VAAL 1500 - MINT 50 MG</h2>
+                                    <p>250₴</p>
+                                    <button>Купити</button>
+                                </div>
+                                <div class="product col-4">
+                                    <div class="box-photo">
+                                        <img src="image/p5.png" alt="">
+                                    </div>
+                                    <h2>VAAL 1500 - MINT 50 MG</h2>
+                                    <p>250₴</p>
+                                    <button>Купити</button>
+                                </div>
+                                <div class="product col-4">
+                                    <div class="box-photo">
+                                        <img src="image/p6.png" alt="">
+                                    </div>
+                                    <h2>VAAL 1500 - MINT 50 MG</h2>
+                                    <p>250₴</p>
+                                    <button>Купити</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <!-- Контент 2 слайда -->
+                        2
+                    </div>
+                    <div class="slider__item">
+                        <!-- Контент 3 слайда -->
+                        3
+                    </div>
+                    <div class="slider__item">
+                        <!-- Контент 4 слайда -->
+                        4
+                    </div>
+                    <div class="slider__item">
+                        <!-- Контент 5 слайда -->
+                        5
+                    </div>
                 </div>
-                <h2>VAAL 1500 - MINT 50 MG</h2>
-                <p>250₴</p>
-                <button>Купити</button>
             </div>
-            <div class="product col-4">
-                <div class="box-photo">
-                    <img src="image/p2.png" alt="">
-                </div>
-                <h2>VAAL 1500 - MINT 50 MG</h2>
-                <p>250₴</p>
-                <button>Купити</button>
-            </div>
-            <div class="product col-4">
-                <div class="box-photo">
-                    <img src="image/p3.png" alt="">
-                </div>
-                <h2>VAAL 1500 - MINT 50 MG</h2>
-                <p>250₴</p>
-                <button>Купити</button>
-            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+            <ol class="slider__indicators">
+                <li data-slide-to="0"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+            </ol>
         </div>
-        <div class="row">
-            <div class="product col-4">
-                <div class="box-photo">
-                    <img src="image/p4.png" alt="">
-                </div>
-                <h2>VAAL 1500 - MINT 50 MG</h2>
-                <p>250₴</p>
-                <button>Купити</button>
-            </div>
-            <div class="product col-4">
-                <div class="box-photo">
-                    <img src="image/p5.png" alt="">
-                </div>
-                <h2>VAAL 1500 - MINT 50 MG</h2>
-                <p>250₴</p>
-                <button>Купити</button>
-            </div>
-            <div class="product col-4">
-                <div class="box-photo">
-                    <img src="image/p6.png" alt="">
-                </div>
-                <h2>VAAL 1500 - MINT 50 MG</h2>
-                <p>250₴</p>
-                <button>Купити</button>
-            </div>
-        </div>
-    </div>
+
+
+<!--    <div class="slider">-->
+<!--        <div class="slider__wrapper">-->
+<!--            <div class="slider__items">-->
+<!--                <div class="slider__item">-->
+<!--                    <img class="image" src="image/p6.png" alt="}">-->
+<!--                </div>-->
+<!--                <div class="slider__item">-->
+<!--                    <img class="image" src="image/p2.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="slider__item">-->
+<!--                    <img class="image" src="image/p3.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="slider__item">-->
+<!--                    <img class="image" src="image/p4.png" alt="">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <ol class="slider__indicators">-->
+<!--            <li data-slide-to="0"></li>-->
+<!--            <li data-slide-to="1"></li>-->
+<!--            <li data-slide-to="2"></li>-->
+<!--            <li data-slide-to="3"></li>-->
+<!--        </ol>-->
+<!--    </div>-->
+
+
+<!--    <div class="row">-->
+<!--        <div class="col-6 main-left">-->
+<!--            <p>Магазин електронних сигарет</p>-->
+<!--            <button>Замовити</button>-->
+<!--        </div>-->
+<!--        <div class="col-6 main-right">-->
+<!--            <div class="background-box">-->
+<!--                <img src="image/1.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="catalog">-->
+<!--        <div class="row">-->
+<!--            <div class="product col-4">-->
+<!--                <div class="box-photo">-->
+<!--                    <img src="image/p1.png" alt="">-->
+<!--                </div>-->
+<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
+<!--                <p>250₴</p>-->
+<!--                <button>Купити</button>-->
+<!--            </div>-->
+<!--            <div class="product col-4">-->
+<!--                <div class="box-photo">-->
+<!--                    <img src="image/p2.png" alt="">-->
+<!--                </div>-->
+<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
+<!--                <p>250₴</p>-->
+<!--                <button>Купити</button>-->
+<!--            </div>-->
+<!--            <div class="product col-4">-->
+<!--                <div class="box-photo">-->
+<!--                    <img src="image/p3.png" alt="">-->
+<!--                </div>-->
+<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
+<!--                <p>250₴</p>-->
+<!--                <button>Купити</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="product col-4">-->
+<!--                <div class="box-photo">-->
+<!--                    <img src="image/p4.png" alt="">-->
+<!--                </div>-->
+<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
+<!--                <p>250₴</p>-->
+<!--                <button>Купити</button>-->
+<!--            </div>-->
+<!--            <div class="product col-4">-->
+<!--                <div class="box-photo">-->
+<!--                    <img src="image/p5.png" alt="">-->
+<!--                </div>-->
+<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
+<!--                <p>250₴</p>-->
+<!--                <button>Купити</button>-->
+<!--            </div>-->
+<!--            <div class="product col-4">-->
+<!--                <div class="box-photo">-->
+<!--                    <img src="image/p6.png" alt="">-->
+<!--                </div>-->
+<!--                <h2>VAAL 1500 - MINT 50 MG</h2>-->
+<!--                <p>250₴</p>-->
+<!--                <button>Купити</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </main>
 <footer class="footer">
     <div class="container">
@@ -108,5 +286,6 @@
     </div>
     <hr>
 </footer>
+
 </body>
 </html>
